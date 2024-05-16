@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="inpone" type="double"/>
+    <aura:attribute name="inptwo" type="double"/>
+    <aura:attribute name="plus" type="double"/>
+    <aura:attribute name="minus" type="double"/>
+
+    <ui:inputNumber label="Input One" value="{!v.inpone}"/>
+    <ui:inputNumber label="Input Two" value="{!v.inptwo}"/>
+    
+    
+    <ui:outputNumber value="{!v.plus}"/>
+    <ui:outputNumber value="{!v.minus}"/>
+    
+    <ui:button label="+" press="{!c.plus}"/>
+    <ui:button label="-" press="{!c.minus}"/>
+</aura:component>

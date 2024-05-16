@@ -1,0 +1,24 @@
+<apex:page standardController="contact" recordSetVar="data" >
+
+<apex:pageblock >
+    <apex:form >
+        <apex:pageBlockTable value="{!data}" var="rec" >
+            <apex:column headerValue="Name"  >
+            '{!rec.name}'
+        </apex:column>
+    
+        <apex:column headerValue="Email" >
+            '{!rec.email}'
+        </apex:column>
+    </apex:pageBlockTable>
+           <apex:pageblockSection columns="4" >
+             <apex:commandButton value="<<" action="{!first}"/>
+            <apex:commandButton value="<" action="{!previous}"/>
+            <apex:commandButton value=">" action="{!next}"/>
+            <apex:commandButton value=">>" action="{!last}"/>
+        </apex:pageblockSection>
+        </apex:form>
+    </apex:pageblock>
+    
+  
+</apex:page>

@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="name1"  type="string" />
+
+    <ui:inputText label="what is your name ?" aura:id="idname" value="{!v.name1}"/>
+    <aura:handler name="change" value="{!v.name1}" action="{!c.handle}"/>
+</aura:component>

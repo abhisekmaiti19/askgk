@@ -1,0 +1,26 @@
+<template>
+    <ul>
+        <template for:each={items} for:item="data">
+            <li key={data}>{data}</li>
+        </template>
+    </ul>
+
+
+    <h1>Hello Apex</h1>
+    
+    <ul>
+        <template for:each={testMethod.data} for:item="con">
+             
+            <li key={con.Id}>
+                
+                  {con.LastName}
+             </li>
+        </template>
+    </ul>
+    <template if:true={showButton}>
+        <lightning-button label="Click Me" onclick={handleClick} variant="brand"></lightning-button>
+        
+    </template>
+    <lightning-button if:true={showAgain} name="hideonly" label="Back it" onclick={handleClicktoggle} variant="brand"></lightning-button>
+    <lightning-button label="Hide again" name="hideagain" onclick={handleClicktoggle} variant="brand"></lightning-button>
+</template>

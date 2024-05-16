@@ -1,0 +1,14 @@
+<aura:component >
+    <aura:handler name="compevent" event="c:CompEvent" action="{!c.handleEvent}"/>
+    
+    <aura:attribute name="age" type="double"/>
+    <aura:attribute name = "myname" type="String"/>
+    
+    <aura:attribute name = "myvalue" type="String"/>
+    
+    From event see it
+    <ui:inputText label="from event" value="{!v.myvalue}"/>
+    
+    <c:ChildComp msg="Hello Child Irr am parent" newmsg="HI AGAIN"/>
+    <br/><ui:button label="See the Message" press="{!c.handlePress}"/>
+</aura:component>

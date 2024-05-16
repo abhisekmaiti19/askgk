@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sell_Item_price</fullName>
+    <active>true</active>
+    <errorConditionFormula>Price__c &gt;  Merchandise__r.Price__c</errorConditionFormula>
+    <errorDisplayField>Price__c</errorDisplayField>
+    <errorMessage>Sell Item price should be less than Merchandise price</errorMessage>
+</ValidationRule>

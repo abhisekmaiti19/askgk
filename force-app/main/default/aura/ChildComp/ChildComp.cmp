@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:registerEvent name="compevent" type="c:CompEvent"/>
+    <aura:attribute name="msg" type="string"/>
+    <aura:attribute name="newmsg" type="string"/>
+     <aura:attribute name="newestmsg" type="string"/>
+    
+    <ui:inputText label ="data from email" value="{!v.newestmsg}" />
+    <ui:outputText value="{!v.msg}"/><br/>
+    <br/><ui:outputText value="{!v.newmsg}"/><br/>
+    
+    <ui:button label="Fire" press = "{!c.myEvent}"/>
+</aura:component>

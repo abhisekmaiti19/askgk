@@ -1,0 +1,8 @@
+<aura:component controller="GetAccname" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="accnumber" type="string"/>
+    <aura:attribute name="accname" type="string"/>
+
+    <ui:inputText label="Eneter your account number " value="{!v.accnumber}"/>
+    <ui:button label="Get Account" press="{!c.handleFun}"/>
+    Your account name = <ui:outputText  value="{!v.accname}"/>
+</aura:component>

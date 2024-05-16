@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:registerEvent name="abhisekEvent" type="c:AbhisekEvent" />
+    
+    <aura:attribute name="myname" type="String"/>
+     <aura:attribute name="msg" type="String"/>
+    
+    
+    <ui:inputText label="Eneter Your Name" value="{!v.myname}"/>
+    <ui:inputText label="Eneter Your Name" value="{!v.msg}"/>
+    
+</aura:component>

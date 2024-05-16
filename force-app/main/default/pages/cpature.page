@@ -1,0 +1,20 @@
+<apex:page controller="magicdetails">
+<div style="background-color:skyblue; width:100%; height:20vh; display:flex; gap:50px;align-items:center; padding:10px;">
+    <h1 style="font-size:15px">Hey {!$User.FirstName}!, Welcome</h1>
+    <h1 style="font-size:25px;">Upsert Merchandise</h1>
+</div>
+  <apex:form >
+          <apex:pageblock >
+              <apex:pageBlockSection >
+                  <apex:inputtext value="{!magicdetails.name}" />
+                  <apex:inputtext value="{!magicdetails.Stock__c}" />
+                  <apex:inputtext value="{!magicdetails.Price__c}" />
+                   <apex:inputtext value="{!magicdetails.Description__c}" />
+              </apex:pageBlockSection>
+              <apex:pageBlockButtons >
+                  <apex:commandButton value="Save" action="{!save}"/>
+                  <apex:commandButton value="Cancel" action="{!cancel}"/>
+              </apex:pageBlockButtons>
+          </apex:pageblock>
+  </apex:form>
+</apex:page>

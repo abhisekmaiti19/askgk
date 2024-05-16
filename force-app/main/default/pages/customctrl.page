@@ -1,0 +1,7 @@
+<apex:page controller="withshare">
+  <apex:form >
+      <apex:inputtext value="{!withshare.name}"/><br/>
+      
+      <apex:commandButton value="Save" action="{!dosave}"/>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+          <p>Hello, {greeting}!</p>
+          <p>I know your email -  {email}!</p>
+          <lightning-input label="Name - update"  name="greet" value={greeting} onchange={changeHandler}></lightning-input>
+          <lightning-input label="Email - update" name="email" value={email} onchange={changeHandler}></lightning-input>
+        </div>
+      </lightning-card>
+</template>

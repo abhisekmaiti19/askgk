@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="val" type="double"/>
+    <aura:attribute name="ret" type="double"/>
+
+    <ltng:require scripts="{!$Resource.testStatic}" />
+    
+    <ui:inputNumber label="Your Input" value="{!v.val}"/>
+    <h1>Your Outout = </h1><ui:outputNumber  value="{!v.ret}"/><br/>
+    <ui:button class="hello" label="+" press="{!c.cal}"/>
+    <ui:button label="=" press="{!c.res}"/>
+    
+
+</aura:component>

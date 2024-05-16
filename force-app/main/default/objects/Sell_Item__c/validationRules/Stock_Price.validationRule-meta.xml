@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stock_Price</fullName>
+    <active>true</active>
+    <errorConditionFormula>Stock__c &gt;  Merchandise__r.Stock__c</errorConditionFormula>
+    <errorDisplayField>Stock__c</errorDisplayField>
+    <errorMessage>Sell Item stock should be less than Merchandise stock</errorMessage>
+</ValidationRule>

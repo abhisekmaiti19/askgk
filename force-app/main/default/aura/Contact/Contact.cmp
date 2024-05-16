@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="getContact" >
+    <aura:attribute name="email" type="string"/>
+    <aura:attribute name="lastname" type="string"/>
+     <aura:attribute name="myname" type="string"/>
+
+    
+        <ui:inputText label="Contact Email" value="{!v.email}"/>
+    <ui:button label="Get your Name" press="{!c.handleClick}"/>
+    Your last name is = <ui:outputText value="{!v.lastname}"/> <br/>
+    Your first name is = <ui:outputText value="{!v.myname}"/>
+ 
+</aura:component>

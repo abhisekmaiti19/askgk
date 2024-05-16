@@ -1,0 +1,21 @@
+<apex:page controller="details">
+<apex:image url="{!$Resource.mtimg}"/>
+<div style="background-color:skyblue; width:100%; height:20vh; display:flex; gap:50px;align-items:center; padding:10px;">
+    <h1 style="font-size:15px">Hey {!$User.FirstName}!, Welcome</h1>
+    <h1 style="font-size:20px;">Capture Contact and Update contact</h1>
+</div>
+<apex:form >
+        <apex:pageblock >
+            <apex:pageblockSection columns="3" >
+                    <apex:inputtext value="{!details.firstname}"/>
+                    <apex:inputtext value="{!details.lastname}"/>
+                    <apex:inputtext value="{!details.phone}"/>
+                    <apex:inputtext value="{!details.email}"/>
+            </apex:pageblockSection>
+            <apex:pageBlockButtons >
+            <apex:commandButton value="Cancel" action="{!cancel}"/>
+                    <apex:commandButton value="{!$Label.Save}" action="{!save}"/>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+</apex:form>
+</apex:page>

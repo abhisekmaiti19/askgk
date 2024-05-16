@@ -1,0 +1,15 @@
+<apex:page standardController="account">
+
+    <apex:pageBlock >
+      
+                <apex:form >
+                    <apex:pageBlockSection columns="3" >
+                        <apex:inputtext value="{!account.name}"/>
+                        <apex:inputtext value="{!account.fax}"/>
+                        <apex:inputtext value="{!account.phone}"/>
+                    </apex:pageBlockSection>
+                </apex:form>
+       
+    </apex:pageBlock>
+
+</apex:page>

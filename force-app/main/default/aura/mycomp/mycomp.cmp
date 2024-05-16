@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name = 'amount' type='double'/>
+    <aura:attribute name = 'tenure' type='double'/>
+    <aura:attribute name = 'duration' type='double'/>
+    <aura:attribute name = 'return' type='double'/>
+    
+    <ui:inputNumber label='amount' value='{!v.amount}' />
+    <ui:inputNumber label='tenure' value='{!v.tenure}' />
+    <ui:inputNumber label='duration' value='{!v.duration}' />
+    <ui:outputNumber aura:id= 'ret' value='{!v.return}' />
+    
+    <ui:button label="Calculate returns" press='{!c.calculate}' />
+
+</aura:component>
